@@ -32,7 +32,7 @@
 /build/
 
 # Web related
-lib/generated_plugin_registrant.dart
+#lib/generated_plugin_registrant.dart
 
 # Symbolication related
 app.*.symbols
@@ -45,5 +45,9 @@ app.*.map.json
 .metadata
 .packages
 projeto_ads_4_ciclo
-pubspec
-README
+pubspec.lock
+pubspec.yaml
+README.md
+/ios/
+/test/
+/web/
