@@ -3,9 +3,12 @@
 //
 
 import 'package:flutter/material.dart';
-import 'login.dart';
-import 't_menu.dart';
-import 't_sobre.dart';
+import 'loginPage.dart';
+import 't_menuPage.dart';
+import 't_sobrePage.dart';
+import 't_cadastroMedPage.dart';
+import 't_estoquePage.dart';
+import 't_recadosPage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -16,9 +19,22 @@ void main() {
       '/login': (context) => Login(),
       '/sobre': (context) => Sobre(),
       '/menu': (context) => Menu(),
-      //'func1': (context) => Func1(),
-      //'func1': (context) => Func1(),
+      '/cadastroMedium': (context) => CadastroMedium(),
+      '/estoque': (context) => Estoque(),
+      '/recados': (context) => Recados(),
     },
+    theme: ThemeData(
+        primaryColor: Colors.blueGrey,
+        brightness: Brightness.light,
+        //backgroundColor: Colors.orange,
+        //accentColor: Colors.cyan,
+        fontFamily: 'Georgia',
+        textTheme: TextTheme(
+          headline4: TextStyle(fontWeight: FontWeight.bold),
+          headline6: TextStyle(fontWeight: FontWeight.bold),
+          bodyText1: TextStyle(fontSize: 20),
+          bodyText2: TextStyle(fontSize: 16),
+        )),
   ));
 }
 
@@ -27,8 +43,7 @@ class VerificaLogin {
   String pass = '';
 
   bool validaUser() {
-    if (usuario != 'user' && pass != 'admin') return false;
+    if (usuario != 'user' || pass != 'admin') return false;
     return true;
   }
-
 }
