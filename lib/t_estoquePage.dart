@@ -30,7 +30,7 @@ Widget carrousel(context) {
         padding: EdgeInsets.all(5),
         width: 330,
         color: Colors.red[50],
-        child: produto1(context),
+        child: Produto1(),
       ),
       Container(
         padding: EdgeInsets.all(5),
@@ -56,46 +56,57 @@ Widget carrousel(context) {
 
 // PRODUTO 1
 
-Widget produto1(context) {
+class Produto1 extends StatefulWidget {
+  @override
+  _State2 createState() => _State2();
+}
+
+class _State2 extends State<Produto1> {
+//Widget produto1(context) {
   int _qtdProd1 = 0;
 
-  return Container(
-    margin: EdgeInsets.all(20),
-    child: Column(
-      children: [
-        //Row(), // Imagem
-        Row(children: [
-          Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
-        ]), // Identificação
-        Row(children: [
-          Expanded(
-              child: Text(
-                  'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
-        ]), // Descrição
-        Row(children: [
-          Chip(
-            label: Text('Em Estoque! $_qtdProd1'),
-          )
-        ]),
-        Row(children: [
-          Text(''),
-        ]),
-        Row(children: [
-          Chip(
-            label: Text('Preço: 12,00'),
-          )
-        ]),
-        Row(
-          children: [
-            TextButton(
-                //onPressed: () => setState(() => _qtdProd1++),
-                onPressed: () {},
-                child: Text('Adicionar'))
-          ],
-        ), // Preço
-      ],
-    ),
-  );
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
 }
 
 // PRODUTO 2
