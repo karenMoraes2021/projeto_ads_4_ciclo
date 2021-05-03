@@ -14,9 +14,10 @@ class Sobre extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Sobre'),
       ),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        child: Column(
+      body: ListView(
+        padding: EdgeInsets.all(10),        
+        children: [
+        Column(
           children: [
             Row(
               children: [
@@ -66,6 +67,7 @@ class Sobre extends StatelessWidget {
             ])
           ],
         ),
+        ],
       ),
       //backgroundColor: Colors.grey,
     );

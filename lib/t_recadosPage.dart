@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 class Recados extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: tabelaDados(context),
+    return Scaffold(
+      appBar: AppBar(title: Text('Eventos')),
+      body: Container(
+        alignment: Alignment.topCenter,
+        child: tabelaDados(context)
+      ),
     );
   }
 }
@@ -33,7 +37,7 @@ Widget tabelaDados(context) {
     'dcEvento': 'Festa beneficente',
     'dtEvento': '24/07/1980'
   };
-  
+
   return DataTable(
     columns: [
       DataColumn(

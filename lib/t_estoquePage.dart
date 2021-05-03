@@ -12,7 +12,7 @@ class _State extends State<Estoque> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Estoque $_count')),
+      appBar: AppBar(title: Text('Estoque')),
       body: Container(
         height: 500,
         child: carrousel(context),
@@ -36,19 +36,19 @@ Widget carrousel(context) {
         padding: EdgeInsets.all(5),
         width: 330,
         color: Colors.green[50],
-        child: produto2(context),
+        child: Produto2(),
       ),
       Container(
         padding: EdgeInsets.all(5),
         width: 330,
         color: Colors.yellow[50],
-        child: produto3(context),
+        child: Produto3(),
       ),
       Container(
         padding: EdgeInsets.all(5),
         width: 330,
         color: Colors.orange[50],
-        child: produto4(context),
+        child: Produto4(),
       )
     ],
   );
@@ -77,7 +77,7 @@ class _State2 extends State<Produto1> {
           Row(children: [
             Expanded(
                 child: Text(
-                    'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
           ]), // Descrição
           Row(children: [
             Chip(
@@ -100,7 +100,14 @@ class _State2 extends State<Produto1> {
               TextButton(
                   onPressed: () => setState(() => _qtdProd1++),
                   //onPressed: () {},
-                  child: Text('Adicionar'))
+                  child: Text('Adicionar')),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
             ],
           ), // Preço
         ],
@@ -111,109 +118,186 @@ class _State2 extends State<Produto1> {
 
 // PRODUTO 2
 
-Widget produto2(context) {
-  return Container(
-    margin: EdgeInsets.all(20),
-    child: Column(
-      children: [
-        //Row(), // Imagem
-        Row(children: [
-          Text('Vela Vermelha \n', style: Theme.of(context).textTheme.headline4)
-        ]), // Identificação
-        Row(children: [
-          Expanded(
-              child: Text(
-                  'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
-        ]), // Descrição
-        Row(children: [
-          Chip(
-            label: Text('Em Estoque!'),
-          )
-        ]),
-        Row(children: [
-          Text(''),
-        ]),
-        Row(children: [
-          Chip(
-            label: Text('Preço: 15,00'),
-          )
-          //Expanded(
-          //  child: Text('Preço: 12,00 caixa \n'))
-        ]), // Preço
-      ],
-    ),
-  );
+class Produto2 extends StatefulWidget {
+  @override
+  _State3 createState() => _State3();
+}
+
+class _State3 extends State<Produto2> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
 }
 
 // PRODUTO 3
 
-Widget produto3(context) {
-  return Container(
-    margin: EdgeInsets.all(20),
-    child: Column(
-      children: [
-        //Row(), // Imagem
-        Row(children: [
-          Text('Cigarro \n', style: Theme.of(context).textTheme.headline4)
-        ]), // Identificação
-        Row(children: [
-          Expanded(
-              child: Text(
-                  'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
-        ]), // Descrição
-        Row(children: [
-          Chip(
-            label: Text('Em Estoque!'),
-          )
-        ]),
-        Row(children: [
-          Text(''),
-        ]),
-        Row(children: [
-          Chip(
-            label: Text('Preço: 12,00'),
-          )
-          //Expanded(
-          //  child: Text('Preço: 12,00 caixa \n'))
-        ]), // Preço
-      ],
-    ),
-  );
+class Produto3 extends StatefulWidget {
+  @override
+  _State4 createState() => _State4();
+}
+
+class _State4 extends State<Produto3> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
 }
 
 // PRODUTO 4
 
-Widget produto4(context) {
-  return Container(
-    margin: EdgeInsets.all(20),
-    child: Column(
-      children: [
-        //Row(), // Imagem
-        Row(children: [
-          Text('Cigarro de palha \n',
-              style: Theme.of(context).textTheme.headline4)
-        ]), // Identificação
-        Row(children: [
-          Expanded(
-              child: Text(
-                  'bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
-        ]), // Descrição
-        Row(children: [
-          Chip(
-            label: Text('Em Estoque!'),
-          )
-        ]),
-        Row(children: [
-          Text(''),
-        ]),
-        Row(children: [
-          Chip(
-            label: Text('Preço: 12,00'),
-          )
-          //Expanded(
-          //  child: Text('Preço: 12,00 caixa \n'))
-        ]), // Preço
-      ],
-    ),
-  );
+class Produto4 extends StatefulWidget {
+  @override
+  _State5 createState() => _State5();
+}
+
+class _State5 extends State<Produto4> {
+//Widget produto1(context) {
+  int _qtdProd1 = 0;
+
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        children: [
+          //Row(), // Imagem
+          Row(children: [
+            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+          ]), // Identificação
+          Row(children: [
+            Expanded(
+                child: Text(
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+          ]), // Descrição
+          Row(children: [
+            Chip(
+              label: Text('Em Estoque! $_qtdProd1'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(children: [
+            Chip(
+              label: Text('Preço: 12,00'),
+            )
+          ]),
+          Row(children: [
+            Text(''),
+          ]),
+          Row(
+            children: [
+              TextButton(
+                  onPressed: () => setState(() => _qtdProd1++),
+                  //onPressed: () {},
+                  child: Text('Adicionar')),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  TextButton(
+                  onPressed: () => setState(() => _qtdProd1--),
+                  //onPressed: () {},
+                  child: Text('Remover'))
+            ],
+          ), // Preço
+        ],
+      ),
+    );
+  }
 }
