@@ -1,0 +1,1906 @@
+define(['dart_sdk', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/widgets/scroll_view.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/painting/basic_types.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/material/chip.dart'], (function load__packages__projeto_ads_4_ciclo__t_estoquePage_dart(dart_sdk, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__widgets__scroll_view$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__painting__basic_types$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__material__chip$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const app_bar = packages__flutter__src__material__icon_button$46dart.src__material__app_bar;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const scroll_view = packages__flutter__src__widgets__scroll_view$46dart.src__widgets__scroll_view;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const basic_types = packages__flutter__src__painting__basic_types$46dart.src__painting__basic_types;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const chip = packages__flutter__src__material__chip$46dart.src__material__chip;
+  var t_estoquePage = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 34,
+        [_Location_line]: 8,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 29,
+        [_Location_line]: 8,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 22,
+        [_Location_line]: 8,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5], widget_inspector._Location);
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 8,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 9,
+        [_Location_line]: 10,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 11,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.constList([C[8] || CT.C8, C[9] || CT.C9], widget_inspector._Location);
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[7] || CT.C7,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 9,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "appBar",
+        [_Location_column]: 7,
+        [_Location_line]: 8,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 9,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12, C[13] || CT.C13], widget_inspector._Location);
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 7,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 23,
+        [_Location_file]: null
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C15() {
+      return C[15] = dart.constList([C[16] || CT.C16, C[17] || CT.C17, C[18] || CT.C18, C[19] || CT.C19], widget_inspector._Location);
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[15] || CT.C15,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 22,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.constList([C[22] || CT.C22, C[23] || CT.C23, C[24] || CT.C24, C[25] || CT.C25], widget_inspector._Location);
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[21] || CT.C21,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 38,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.constList([C[28] || CT.C28, C[29] || CT.C29, C[30] || CT.C30, C[31] || CT.C31], widget_inspector._Location);
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[27] || CT.C27,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 9,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 9,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "color",
+        [_Location_column]: 9,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 44,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34, C[35] || CT.C35, C[36] || CT.C36, C[37] || CT.C37], widget_inspector._Location);
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 7,
+        [_Location_line]: 40,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 5,
+        [_Location_line]: 19,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "scrollDirection",
+        [_Location_column]: 5,
+        [_Location_line]: 20,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 5,
+        [_Location_line]: 21,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41, C[42] || CT.C42], widget_inspector._Location);
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 18,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 47,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.constList([C[45] || CT.C45, C[46] || CT.C46], widget_inspector._Location);
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[44] || CT.C44,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 58,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C48() {
+      return C[48] = dart.constList([C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[48] || CT.C48,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 58,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C51() {
+      return C[51] = dart.constList([C[52] || CT.C52], widget_inspector._Location);
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[51] || CT.C51,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 61,
+        [_Location_file]: null
+      });
+    },
+    get C54() {
+      return C[54] = dart.constList([C[55] || CT.C55], widget_inspector._Location);
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[54] || CT.C54,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.constList([C[58] || CT.C58], widget_inspector._Location);
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[57] || CT.C57,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61], widget_inspector._Location);
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.constList([C[64] || CT.C64], widget_inspector._Location);
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[63] || CT.C63,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C66() {
+      return C[66] = dart.constList([C[67] || CT.C67], widget_inspector._Location);
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[66] || CT.C66,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70], widget_inspector._Location);
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.constList([C[73] || CT.C73], widget_inspector._Location);
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[72] || CT.C72,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.constList([C[76] || CT.C76], widget_inspector._Location);
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[75] || CT.C75,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 73,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 73,
+        [_Location_file]: null
+      });
+    },
+    get C78() {
+      return C[78] = dart.constList([C[79] || CT.C79], widget_inspector._Location);
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[78] || CT.C78,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 72,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C81() {
+      return C[81] = dart.constList([C[82] || CT.C82], widget_inspector._Location);
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[81] || CT.C81,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.constList([C[85] || CT.C85], widget_inspector._Location);
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[84] || CT.C84,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 5,
+        [_Location_line]: 54,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 5,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C87() {
+      return C[87] = dart.constList([C[88] || CT.C88, C[89] || CT.C89], widget_inspector._Location);
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[87] || CT.C87,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 53,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 49,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.constList([C[92] || CT.C92, C[93] || CT.C93], widget_inspector._Location);
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[91] || CT.C91,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.constList([C[96] || CT.C96], widget_inspector._Location);
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[95] || CT.C95,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C98() {
+      return C[98] = dart.constList([C[99] || CT.C99], widget_inspector._Location);
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[98] || CT.C98,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 94,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.constList([C[102] || CT.C102], widget_inspector._Location);
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[101] || CT.C101,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 93,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C104() {
+      return C[104] = dart.constList([C[105] || CT.C105], widget_inspector._Location);
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[104] || CT.C104,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 98,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.constList([C[108] || CT.C108], widget_inspector._Location);
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[107] || CT.C107,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 98,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 98,
+        [_Location_file]: null
+      });
+    },
+    get C110() {
+      return C[110] = dart.constList([C[111] || CT.C111], widget_inspector._Location);
+    },
+    get C109() {
+      return C[109] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[110] || CT.C110,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C114() {
+      return C[114] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 96,
+        [_Location_file]: null
+      });
+    },
+    get C113() {
+      return C[113] = dart.constList([C[114] || CT.C114], widget_inspector._Location);
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[113] || CT.C113,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 96,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 102,
+        [_Location_file]: null
+      });
+    },
+    get C116() {
+      return C[116] = dart.constList([C[117] || CT.C117], widget_inspector._Location);
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[116] || CT.C116,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 102,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C120() {
+      return C[120] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C119() {
+      return C[119] = dart.constList([C[120] || CT.C120], widget_inspector._Location);
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[119] || CT.C119,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 101,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C122() {
+      return C[122] = dart.constList([C[123] || CT.C123], widget_inspector._Location);
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[122] || CT.C122,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 106,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C125() {
+      return C[125] = dart.constList([C[126] || CT.C126], widget_inspector._Location);
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[125] || CT.C125,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 105,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C129() {
+      return C[129] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 104,
+        [_Location_file]: null
+      });
+    },
+    get C128() {
+      return C[128] = dart.constList([C[129] || CT.C129], widget_inspector._Location);
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[128] || CT.C128,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 104,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C132() {
+      return C[132] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C131() {
+      return C[131] = dart.constList([C[132] || CT.C132], widget_inspector._Location);
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[131] || CT.C131,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 5,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C136() {
+      return C[136] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 5,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C134() {
+      return C[134] = dart.constList([C[135] || CT.C135, C[136] || CT.C136], widget_inspector._Location);
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[134] || CT.C134,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C139() {
+      return C[139] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C140() {
+      return C[140] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 43,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C138() {
+      return C[138] = dart.constList([C[139] || CT.C139, C[140] || CT.C140], widget_inspector._Location);
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[138] || CT.C138,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 124,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C143() {
+      return C[143] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C142() {
+      return C[142] = dart.constList([C[143] || CT.C143], widget_inspector._Location);
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[142] || CT.C142,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 124,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C146() {
+      return C[146] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 127,
+        [_Location_file]: null
+      });
+    },
+    get C145() {
+      return C[145] = dart.constList([C[146] || CT.C146], widget_inspector._Location);
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[145] || CT.C145,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 127,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 127,
+        [_Location_file]: null
+      });
+    },
+    get C148() {
+      return C[148] = dart.constList([C[149] || CT.C149], widget_inspector._Location);
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[148] || CT.C148,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 126,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C152() {
+      return C[152] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 125,
+        [_Location_file]: null
+      });
+    },
+    get C151() {
+      return C[151] = dart.constList([C[152] || CT.C152], widget_inspector._Location);
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[151] || CT.C151,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 125,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C155() {
+      return C[155] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 131,
+        [_Location_file]: null
+      });
+    },
+    get C154() {
+      return C[154] = dart.constList([C[155] || CT.C155], widget_inspector._Location);
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[154] || CT.C154,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 131,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C158() {
+      return C[158] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 131,
+        [_Location_file]: null
+      });
+    },
+    get C157() {
+      return C[157] = dart.constList([C[158] || CT.C158], widget_inspector._Location);
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[157] || CT.C157,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 130,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 129,
+        [_Location_file]: null
+      });
+    },
+    get C160() {
+      return C[160] = dart.constList([C[161] || CT.C161], widget_inspector._Location);
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[160] || CT.C160,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 129,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 135,
+        [_Location_file]: null
+      });
+    },
+    get C163() {
+      return C[163] = dart.constList([C[164] || CT.C164], widget_inspector._Location);
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[163] || CT.C163,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 135,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C167() {
+      return C[167] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 134,
+        [_Location_file]: null
+      });
+    },
+    get C166() {
+      return C[166] = dart.constList([C[167] || CT.C167], widget_inspector._Location);
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[166] || CT.C166,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 134,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C170() {
+      return C[170] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C169() {
+      return C[169] = dart.constList([C[170] || CT.C170], widget_inspector._Location);
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[169] || CT.C169,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 139,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C173() {
+      return C[173] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C172() {
+      return C[172] = dart.constList([C[173] || CT.C173], widget_inspector._Location);
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[172] || CT.C172,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 138,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C175() {
+      return C[175] = dart.constList([C[176] || CT.C176], widget_inspector._Location);
+    },
+    get C174() {
+      return C[174] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[175] || CT.C175,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 122,
+        [_Location_file]: null
+      });
+    },
+    get C178() {
+      return C[178] = dart.constList([C[179] || CT.C179], widget_inspector._Location);
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[178] || CT.C178,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 121,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C182() {
+      return C[182] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 5,
+        [_Location_line]: 120,
+        [_Location_file]: null
+      });
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 5,
+        [_Location_line]: 121,
+        [_Location_file]: null
+      });
+    },
+    get C181() {
+      return C[181] = dart.constList([C[182] || CT.C182, C[183] || CT.C183], widget_inspector._Location);
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[181] || CT.C181,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 119,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 52,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C185() {
+      return C[185] = dart.constList([C[186] || CT.C186, C[187] || CT.C187], widget_inspector._Location);
+    },
+    get C184() {
+      return C[184] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[185] || CT.C185,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 157,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C190() {
+      return C[190] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 157,
+        [_Location_file]: null
+      });
+    },
+    get C189() {
+      return C[189] = dart.constList([C[190] || CT.C190], widget_inspector._Location);
+    },
+    get C188() {
+      return C[188] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[189] || CT.C189,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 157,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 27,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C192() {
+      return C[192] = dart.constList([C[193] || CT.C193], widget_inspector._Location);
+    },
+    get C191() {
+      return C[191] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[192] || CT.C192,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 160,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 15,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C195() {
+      return C[195] = dart.constList([C[196] || CT.C196], widget_inspector._Location);
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[195] || CT.C195,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C199() {
+      return C[199] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 158,
+        [_Location_file]: null
+      });
+    },
+    get C198() {
+      return C[198] = dart.constList([C[199] || CT.C199], widget_inspector._Location);
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[198] || CT.C198,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 158,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C202() {
+      return C[202] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C201() {
+      return C[201] = dart.constList([C[202] || CT.C202], widget_inspector._Location);
+    },
+    get C200() {
+      return C[200] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[201] || CT.C201,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C204() {
+      return C[204] = dart.constList([C[205] || CT.C205], widget_inspector._Location);
+    },
+    get C203() {
+      return C[203] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[204] || CT.C204,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 163,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 162,
+        [_Location_file]: null
+      });
+    },
+    get C207() {
+      return C[207] = dart.constList([C[208] || CT.C208], widget_inspector._Location);
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[207] || CT.C207,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 162,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 18,
+        [_Location_line]: 168,
+        [_Location_file]: null
+      });
+    },
+    get C210() {
+      return C[210] = dart.constList([C[211] || CT.C211], widget_inspector._Location);
+    },
+    get C209() {
+      return C[209] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[210] || CT.C210,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 168,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 167,
+        [_Location_file]: null
+      });
+    },
+    get C213() {
+      return C[213] = dart.constList([C[214] || CT.C214], widget_inspector._Location);
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[213] || CT.C213,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 167,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C217() {
+      return C[217] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 25,
+        [_Location_line]: 172,
+        [_Location_file]: null
+      });
+    },
+    get C216() {
+      return C[216] = dart.constList([C[217] || CT.C217], widget_inspector._Location);
+    },
+    get C215() {
+      return C[215] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[216] || CT.C216,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 172,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "label",
+        [_Location_column]: 13,
+        [_Location_line]: 172,
+        [_Location_file]: null
+      });
+    },
+    get C219() {
+      return C[219] = dart.constList([C[220] || CT.C220], widget_inspector._Location);
+    },
+    get C218() {
+      return C[218] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[219] || CT.C219,
+        [_Location_name]: null,
+        [_Location_column]: 11,
+        [_Location_line]: 171,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 170,
+        [_Location_file]: null
+      });
+    },
+    get C222() {
+      return C[222] = dart.constList([C[223] || CT.C223], widget_inspector._Location);
+    },
+    get C221() {
+      return C[221] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[222] || CT.C222,
+        [_Location_name]: null,
+        [_Location_column]: 9,
+        [_Location_line]: 170,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C226() {
+      return C[226] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 155,
+        [_Location_file]: null
+      });
+    },
+    get C225() {
+      return C[225] = dart.constList([C[226] || CT.C226], widget_inspector._Location);
+    },
+    get C224() {
+      return C[224] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[225] || CT.C225,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 154,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    },
+    get C229() {
+      return C[229] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "margin",
+        [_Location_column]: 5,
+        [_Location_line]: 153,
+        [_Location_file]: null
+      });
+    },
+    get C230() {
+      return C[230] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 5,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C228() {
+      return C[228] = dart.constList([C[229] || CT.C229, C[230] || CT.C230], widget_inspector._Location);
+    },
+    get C227() {
+      return C[227] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[228] || CT.C228,
+        [_Location_name]: null,
+        [_Location_column]: 10,
+        [_Location_line]: 152,
+        [_Location_file]: "file:///C:/Users/aless/OneDrive/Documentos/projetosGit/projeto_ads_4_ciclo/lib/t_estoquePage.dart"
+      });
+    }
+  }, false);
+  var C = Array(231).fill(void 0);
+  var I = ["package:projeto_ads_4_ciclo/t_estoquePage.dart"];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  t_estoquePage.Estoque = class Estoque extends framework.StatelessWidget {
+    build(context) {
+      return new scaffold.Scaffold.new({appBar: new app_bar.AppBar.new({title: new text.Text.new("Estoque", {$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), body: new container.Container.new({height: 500.0, child: t_estoquePage.carrousel(context), $creationLocationd_0dea112b090073317d4: C[6] || CT.C6}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10});
+    }
+  };
+  (t_estoquePage.Estoque.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    t_estoquePage.Estoque.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = t_estoquePage.Estoque.prototype;
+  dart.addTypeTests(t_estoquePage.Estoque);
+  dart.addTypeCaches(t_estoquePage.Estoque);
+  dart.setMethodSignature(t_estoquePage.Estoque, () => ({
+    __proto__: dart.getMethods(t_estoquePage.Estoque.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(t_estoquePage.Estoque, I[0]);
+  t_estoquePage.carrousel = function carrousel(context) {
+    return new scroll_view.ListView.new({padding: new edge_insets.EdgeInsets.all(10.0), scrollDirection: basic_types.Axis.horizontal, children: T.JSArrayOfWidget().of([new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.red._get(50), child: t_estoquePage.produto1(context), $creationLocationd_0dea112b090073317d4: C[14] || CT.C14}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.green._get(50), child: t_estoquePage.produto2(context), $creationLocationd_0dea112b090073317d4: C[20] || CT.C20}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.yellow._get(50), child: t_estoquePage.produto3(context), $creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), new container.Container.new({padding: new edge_insets.EdgeInsets.all(5.0), width: 330.0, color: colors.Colors.orange._get(50), child: t_estoquePage.produto4(context), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32})]), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38});
+  };
+  t_estoquePage.produto1 = function produto1(context) {
+    return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Branca \n", {style: theme.Theme.of(framework.BuildContext.as(context)).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[43] || CT.C43})]), $creationLocationd_0dea112b090073317d4: C[47] || CT.C47}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[50] || CT.C50}), $creationLocationd_0dea112b090073317d4: C[53] || CT.C53})]), $creationLocationd_0dea112b090073317d4: C[56] || CT.C56}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque!", {$creationLocationd_0dea112b090073317d4: C[59] || CT.C59}), $creationLocationd_0dea112b090073317d4: C[62] || CT.C62})]), $creationLocationd_0dea112b090073317d4: C[65] || CT.C65}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[68] || CT.C68})]), $creationLocationd_0dea112b090073317d4: C[71] || CT.C71}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[74] || CT.C74}), $creationLocationd_0dea112b090073317d4: C[77] || CT.C77})]), $creationLocationd_0dea112b090073317d4: C[80] || CT.C80})]), $creationLocationd_0dea112b090073317d4: C[83] || CT.C83}), $creationLocationd_0dea112b090073317d4: C[86] || CT.C86});
+  };
+  t_estoquePage.produto2 = function produto2(context) {
+    return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Vela Vermelha \n", {style: theme.Theme.of(framework.BuildContext.as(context)).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[90] || CT.C90})]), $creationLocationd_0dea112b090073317d4: C[94] || CT.C94}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[97] || CT.C97}), $creationLocationd_0dea112b090073317d4: C[100] || CT.C100})]), $creationLocationd_0dea112b090073317d4: C[103] || CT.C103}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque!", {$creationLocationd_0dea112b090073317d4: C[106] || CT.C106}), $creationLocationd_0dea112b090073317d4: C[109] || CT.C109})]), $creationLocationd_0dea112b090073317d4: C[112] || CT.C112}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[115] || CT.C115})]), $creationLocationd_0dea112b090073317d4: C[118] || CT.C118}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 15,00", {$creationLocationd_0dea112b090073317d4: C[121] || CT.C121}), $creationLocationd_0dea112b090073317d4: C[124] || CT.C124})]), $creationLocationd_0dea112b090073317d4: C[127] || CT.C127})]), $creationLocationd_0dea112b090073317d4: C[130] || CT.C130}), $creationLocationd_0dea112b090073317d4: C[133] || CT.C133});
+  };
+  t_estoquePage.produto3 = function produto3(context) {
+    return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Cigarro \n", {style: theme.Theme.of(framework.BuildContext.as(context)).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[137] || CT.C137})]), $creationLocationd_0dea112b090073317d4: C[141] || CT.C141}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[144] || CT.C144}), $creationLocationd_0dea112b090073317d4: C[147] || CT.C147})]), $creationLocationd_0dea112b090073317d4: C[150] || CT.C150}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque!", {$creationLocationd_0dea112b090073317d4: C[153] || CT.C153}), $creationLocationd_0dea112b090073317d4: C[156] || CT.C156})]), $creationLocationd_0dea112b090073317d4: C[159] || CT.C159}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[162] || CT.C162})]), $creationLocationd_0dea112b090073317d4: C[165] || CT.C165}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[168] || CT.C168}), $creationLocationd_0dea112b090073317d4: C[171] || CT.C171})]), $creationLocationd_0dea112b090073317d4: C[174] || CT.C174})]), $creationLocationd_0dea112b090073317d4: C[177] || CT.C177}), $creationLocationd_0dea112b090073317d4: C[180] || CT.C180});
+  };
+  t_estoquePage.produto4 = function produto4(context) {
+    return new container.Container.new({margin: new edge_insets.EdgeInsets.all(20.0), child: new basic.Column.new({children: T.JSArrayOfWidget().of([new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("Cigarro de palha \n", {style: theme.Theme.of(framework.BuildContext.as(context)).textTheme.headline4, $creationLocationd_0dea112b090073317d4: C[184] || CT.C184})]), $creationLocationd_0dea112b090073317d4: C[188] || CT.C188}), new basic.Row.new({children: T.JSArrayOfWidget().of([new basic.Expanded.new({child: new text.Text.new("bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n", {$creationLocationd_0dea112b090073317d4: C[191] || CT.C191}), $creationLocationd_0dea112b090073317d4: C[194] || CT.C194})]), $creationLocationd_0dea112b090073317d4: C[197] || CT.C197}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Em Estoque!", {$creationLocationd_0dea112b090073317d4: C[200] || CT.C200}), $creationLocationd_0dea112b090073317d4: C[203] || CT.C203})]), $creationLocationd_0dea112b090073317d4: C[206] || CT.C206}), new basic.Row.new({children: T.JSArrayOfWidget().of([new text.Text.new("", {$creationLocationd_0dea112b090073317d4: C[209] || CT.C209})]), $creationLocationd_0dea112b090073317d4: C[212] || CT.C212}), new basic.Row.new({children: T.JSArrayOfWidget().of([new chip.Chip.new({label: new text.Text.new("Preço: 12,00", {$creationLocationd_0dea112b090073317d4: C[215] || CT.C215}), $creationLocationd_0dea112b090073317d4: C[218] || CT.C218})]), $creationLocationd_0dea112b090073317d4: C[221] || CT.C221})]), $creationLocationd_0dea112b090073317d4: C[224] || CT.C224}), $creationLocationd_0dea112b090073317d4: C[227] || CT.C227});
+  };
+  dart.trackLibraries("packages/projeto_ads_4_ciclo/t_estoquePage.dart", {
+    "package:projeto_ads_4_ciclo/t_estoquePage.dart": t_estoquePage
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["t_estoquePage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAK4B;AACxB,YAAO,oCACG,+BAAc,kBAAK,oIACrB,qCACI,cACD,wBAAU,OAAO;IAG9B;;;;;;EACF;;;;;;;;+CAEiB;AACf,UAAO,wCACe,+BAAI,wBACF,uCACZ,wBACR,sCACsB,+BAAI,aACjB,cACO,AAAG,uBAAC,YACX,uBAAS,OAAO,8DAEzB,sCACsB,+BAAI,aACjB,cACO,AAAK,yBAAC,YACb,uBAAS,OAAO,8DAEzB,sCACsB,+BAAI,aACjB,cACO,AAAM,0BAAC,YACd,uBAAS,OAAO,8DAEzB,sCACsB,+BAAI,aACjB,cACO,AAAM,0BAAC,YACd,uBAAS,OAAO;EAI/B;6CAIgB;AACd,UAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBAAC,kBAAK,0BAA+B,AAAY,AAAU,yCAAnB,OAAO,gJAC7D,6BAAc,wBACZ,+BACW,kBAAK,gPAElB,6BAAc,wBACZ,0BACS,kBAAK,mMAGhB,6BAAc,wBACV,kBAAK,6HAET,6BAAc,wBACZ,0BACS,kBAAK;EAQxB;6CAIgB;AACd,UAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBAAC,kBAAK,4BAAiC,AAAY,AAAU,yCAAnB,OAAO,gJAC/D,6BAAc,wBACZ,+BACW,kBAAK,oPAElB,6BAAc,wBACZ,0BACS,kBAAK,yMAGhB,6BAAc,wBACV,kBAAK,iIAET,6BAAc,wBACZ,0BACS,kBAAK;EAQxB;6CAIgB;AACd,UAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBAAC,kBAAK,sBAA2B,AAAY,AAAU,yCAAnB,OAAO,oJACzD,6BAAc,wBACZ,+BACW,kBAAK,sPAElB,6BAAc,wBACZ,0BACS,kBAAK,yMAGhB,6BAAc,wBACV,kBAAK,iIAET,6BAAc,wBACZ,0BACS,kBAAK;EAQxB;6CAIgB;AACd,UAAO,sCACc,+BAAI,cAChB,gCACK,wBAER,6BAAc,wBAAC,kBAAK,+BAAoC,AAAY,AAAU,yCAAnB,OAAO,oJAClE,6BAAc,wBACZ,+BACW,kBAAK,sPAElB,6BAAc,wBACZ,0BACS,kBAAK,yMAGhB,6BAAc,wBACV,kBAAK,iIAET,6BAAc,wBACZ,0BACS,kBAAK;EAQxB","file":"../../../../../../../packages/projeto_ads_4_ciclo/t_estoquePage.dart.lib.js"}');
+  // Exports:
+  return {
+    t_estoquePage: t_estoquePage
+  };
+}));
+
+//# sourceMappingURL=t_estoquePage.dart.lib.js.map
