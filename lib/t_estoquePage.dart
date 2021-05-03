@@ -88,7 +88,8 @@ Widget produto1(context) {
         Row(
           children: [
             TextButton(
-                onPressed: () => setState(() => _qtdProd1++),
+                //onPressed: () => setState(() => _qtdProd1++),
+                onPressed: () {},
                 child: Text('Adicionar'))
           ],
         ), // Preço
