@@ -9,6 +9,7 @@ import 't_sobrePage.dart';
 import 't_cadastroMedPage.dart';
 import 't_estoquePage.dart';
 import 't_recadosPage.dart';
+import 't_cadastroMedFormPage.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,6 +23,7 @@ void main() {
       '/cadastroMedium': (context) => CadastroMedium(),
       '/estoque': (context) => Estoque(),
       '/recados': (context) => Recados(),
+      '/cadastroForm': (context) => CadastroForm(),
     },
     theme: ThemeData(
         primaryColor: Colors.blueGrey,
