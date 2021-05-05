@@ -14,6 +14,7 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   static const nomeRota = '/login';
   VerificaLogin login1 = new VerificaLogin();
+   bool esqueceSenha = true ; 
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +72,22 @@ class _LoginState extends State<Login> {
                     caixaDialogo("Informe as credenciais corretas...");
                 },
                 child: Text('Login')),
-          )
+          ),
+             Container(
+                      child: ButtonTheme(
+                        buttonColor: Colors.indigoAccent,
+                        child: TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/redefinir');
+                          },
+                          child: Text('\n Redefinir Senha',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18,
+                                  fontStyle: FontStyle.italic)),
+                        ),
+                      ),
+                    ),
         ]),
       ),
     );
@@ -95,9 +111,6 @@ class _LoginState extends State<Login> {
           );
         });
   }
-
-
-  
 }
 
 

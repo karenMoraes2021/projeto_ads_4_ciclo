@@ -9,7 +9,8 @@ import 't_sobrePage.dart';
 import 't_cadastroMedPage.dart';
 import 't_estoquePage.dart';
 import 't_recadosPage.dart';
-import 't_cadastroMedFormPage.dart';
+import 't_configPages.dart';
+import 't_redefinirSenha.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -23,7 +24,8 @@ void main() {
       '/cadastroMedium': (context) => CadastroMedium(),
       '/estoque': (context) => Estoque(),
       '/recados': (context) => Recados(),
-      '/cadastroForm': (context) => CadastroForm(),
+      '/configuracao': (context) => Configuracoes(),
+      '/redefinir': (context) => RedefinirSenha(),
     },
     theme: ThemeData(
         primaryColor: Colors.blueGrey,

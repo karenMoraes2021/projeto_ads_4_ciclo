@@ -3,12 +3,12 @@
 //
 
 import 'package:flutter/material.dart';
-import 'package:projeto_ads_4_ciclo/t_estoquePage.dart';
-import 'package:projeto_ads_4_ciclo/t_recadosPage.dart';
+import 't_configPages.dart';
+import 't_estoquePage.dart';
+import 't_recadosPage.dart';
 import 'loginPage.dart';
 import 't_sobrePage.dart';
 import 't_cadastroMedPage.dart';
-import 't_estoquePage.dart';
 
 class Menu extends StatelessWidget {
   static const nomeRota = '/menu';
@@ -67,7 +67,7 @@ Widget menuLateral(context) {
               MaterialPageRoute(builder: (BuildContext context) => CadastroMedium()),
             );
           },
-        ),
+        ),        
         ListTile(
           leading: Icon(Icons.add_shopping_cart),
           title: Text('Estoque'),
@@ -92,7 +92,18 @@ Widget menuLateral(context) {
                     builder: (BuildContext context) => Sobre()));
           }
         ),
-        
+        ListTile(
+          leading: Icon(Icons.settings),
+          title: Text('Configurações'),
+          subtitle: Text('Permissões e Segurança'),
+          trailing: Icon(Icons.arrow_forward_outlined),
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (BuildContext context) => Configuracoes()));
+          }
+        ),
         ListTile(
           leading: Icon(Icons.logout),
           title: Text('Logout'),
