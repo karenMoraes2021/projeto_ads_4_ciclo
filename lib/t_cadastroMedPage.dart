@@ -9,7 +9,6 @@ class CadastroMedium extends StatefulWidget {
 class _State extends State<CadastroMedium> {
   static const nomeRota = '/cadastroMedium';
   //int _count = 0;
-  String result = '';
 
   @override
   Widget build(BuildContext context) {
@@ -19,23 +18,91 @@ class _State extends State<CadastroMedium> {
       ),
       body: Column(
         children: [
-          Row(children: [Text('Teste de botão $result')])
+          Row(children: [tabelaDados(context)])
         ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          result = await Navigator.push(
-              context, MaterialPageRoute(builder: (BuildContext context) => CadastroForm()));
+          final result = await Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => CadastroForm()));
+          //teste(result);
         },
-        /*
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (BuildContext context) => CadastroForm())));
-        },
-        */
-        tooltip: 'Teste',
+        tooltip: 'Cadastrar novo',
         child: const Icon(Icons.add),
       ),
     );
   }
+}
+
+Widget tabelaDados(context) {
+  var _medium1 = {
+    'nome': 'José Maurício',
+    'cpf': '999.999.999-00',
+    'telefone': '16 98888-8888'
+  };
+
+  var _medium2 = {
+    'nome': 'Ana Flávia',
+    'cpf': '999.999.999-00',
+    'telefone': '16 98888-8888'
+  };
+
+  var _medium3 = {
+    'nome': 'Joaquim Nabuco',
+    'cpf': '999.999.999-00',
+    'telefone': '16 98888-8888'
+  };
+
+  var _medium4 = {
+    'nome': 'Isaura Matos',
+    'cpf': '999.999.999-00',
+    'telefone': '16 98888-8888'
+  };
+
+  return DataTable(
+    sortAscending: true,
+    columns: [
+      DataColumn(
+        label: Text('Nome'),
+      ),
+      DataColumn(
+        label: Text('CPF'),
+      ),
+      DataColumn(
+        label: Text('Fone Principal'),
+      )
+    ],
+    rows: [
+      DataRow(
+        cells: [
+          DataCell(Text(_medium1['nome'].toString())),
+          DataCell(Text(_medium1['cpf'].toString())),
+          DataCell(Text(_medium1['telefone'].toString()))
+        ],
+      ),
+      DataRow(
+        cells: [
+          DataCell(Text(_medium2['nome'].toString())),
+          DataCell(Text(_medium2['cpf'].toString())),
+          DataCell(Text(_medium2['telefone'].toString()))
+        ],
+      ),
+      DataRow(
+        cells: [
+          DataCell(Text(_medium3['nome'].toString())),
+          DataCell(Text(_medium3['cpf'].toString())),
+          DataCell(Text(_medium3['telefone'].toString()))
+        ],
+      ),
+      DataRow(
+        cells: [
+          DataCell(Text(_medium4['nome'].toString())),
+          DataCell(Text(_medium4['cpf'].toString())),
+          DataCell(Text(_medium4['telefone'].toString()))
+        ],
+      ),
+    ],
+  );
 }
