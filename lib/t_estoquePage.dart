@@ -7,9 +7,7 @@ class Estoque extends StatefulWidget {
 }
 
 class _State extends State<Estoque> {
-  int _count = 0;
-
-  @override
+    @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Estoque')),
@@ -49,7 +47,7 @@ Widget carrousel(context) {
         width: 330,
         color: Colors.orange[50],
         child: Produto4(),
-      )
+      ),
     ],
   );
 }
@@ -70,18 +68,22 @@ class _State2 extends State<Produto1> {
       margin: EdgeInsets.all(20),
       child: Column(
         children: [
-          //Row(), // Imagem
           Row(children: [
-            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
-          ]), // Identificação
+            Text('Vela Vermelha \n', style: Theme.of(context).textTheme.headline4)
+          ]), 
           Row(children: [
+             SizedBox(
+            height: 100,
+            width: 100,
+            child: Image.network('https://www.extra-imagens.com.br/Control/ArquivoExibir.aspx?IdArquivo=1636819171\n'),
+          ),// Identificação
             Expanded(
                 child: Text(
                     'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
           ]), // Descrição
           Row(children: [
             Chip(
-              label: Text('Em Estoque! $_qtdProd1'),
+              label: Text('Em Estoque: $_qtdProd1'),
             )
           ]),
           Row(children: [
@@ -132,18 +134,22 @@ class _State3 extends State<Produto2> {
       margin: EdgeInsets.all(20),
       child: Column(
         children: [
-          //Row(), // Imagem
           Row(children: [
-            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+            Text('Vela Amarela \n', style: Theme.of(context).textTheme.headline4)
           ]), // Identificação
           Row(children: [
+             SizedBox(
+            height: 100,
+            width: 100,
+            child: Image.network('https://http2.mlstatic.com/D_NQ_NP_2X_947438-MLB42246588617_062020-F.webp\n'),
+          ),// Identificação
             Expanded(
                 child: Text(
                     'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
           ]), // Descrição
           Row(children: [
             Chip(
-              label: Text('Em Estoque! $_qtdProd1'),
+              label: Text('Em Estoque: $_qtdProd1'),
             )
           ]),
           Row(children: [
@@ -196,16 +202,21 @@ class _State4 extends State<Produto3> {
         children: [
           //Row(), // Imagem
           Row(children: [
-            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+            Text('Vela Azul \n', style: Theme.of(context).textTheme.headline4)
           ]), // Identificação
           Row(children: [
+            SizedBox(
+            height: 100,
+            width: 100,
+            child: Image.network('https://images-shoptime.b2w.io/produtos/01/00/img/1641315/7/1641315707_1SZ.jpg'),
+          ),// Identi
             Expanded(
                 child: Text(
                     'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
           ]), // Descrição
           Row(children: [
             Chip(
-              label: Text('Em Estoque! $_qtdProd1'),
+              label: Text('Em Estoque: $_qtdProd1'),
             )
           ]),
           Row(children: [
@@ -258,16 +269,21 @@ class _State5 extends State<Produto4> {
         children: [
           //Row(), // Imagem
           Row(children: [
-            Text('Vela Branca \n', style: Theme.of(context).textTheme.headline4)
+            Text('Cigarro de Palha \n', style: Theme.of(context).textTheme.headline4)
           ]), // Identificação
           Row(children: [
+            SizedBox(
+            height: 100,
+            width: 100,
+            child: Image.network('https://imageswscdn.plataformawebstore.com.br//files/21791/cigarro-de-palha-crioulos-com-14-cigarros-de-palha-306814.peg'),
+          ),// Identi
             Expanded(
                 child: Text(
-                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n'))
+                    'Descrição do produto: bla lbal laaif daifoads dofsao daofsd odsifas osidfos \n\n'))
           ]), // Descrição
           Row(children: [
             Chip(
-              label: Text('Em Estoque! $_qtdProd1'),
+              label: Text('Em Estoque: $_qtdProd1'),
             )
           ]),
           Row(children: [

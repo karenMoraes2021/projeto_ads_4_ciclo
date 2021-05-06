@@ -7,14 +7,11 @@ class CadastroMedium extends StatefulWidget {
 }
 
 class _State extends State<CadastroMedium> {
-  static const nomeRota = '/cadastroMedium';
-  //int _count = 0;
-
-  @override
+    @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cadastro de Médiuns'),
+        title: const Text('Lista de Médiuns'),
       ),
       body: Column(
         children: [
@@ -23,11 +20,10 @@ class _State extends State<CadastroMedium> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          final result = await Navigator.push(
+          await Navigator.push(
               context,
               MaterialPageRoute(
                   builder: (BuildContext context) => CadastroForm()));
-          //teste(result);
         },
         tooltip: 'Cadastrar novo',
         child: const Icon(Icons.add),
