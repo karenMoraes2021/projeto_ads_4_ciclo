@@ -30,8 +30,6 @@ void main() {
     theme: ThemeData(
         primaryColor: Colors.blueGrey,
         brightness: Brightness.light,
-        //backgroundColor: Colors.orange,
-        //accentColor: Colors.cyan,
         fontFamily: 'Georgia',
         textTheme: TextTheme(
           headline4: TextStyle(fontWeight: FontWeight.bold),

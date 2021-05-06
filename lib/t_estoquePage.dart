@@ -7,8 +7,6 @@ class Estoque extends StatefulWidget {
 }
 
 class _State extends State<Estoque> {
-  int _count = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

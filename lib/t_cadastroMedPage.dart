@@ -7,9 +7,6 @@ class CadastroMedium extends StatefulWidget {
 }
 
 class _State extends State<CadastroMedium> {
-  static const nomeRota = '/cadastroMedium';
-  //int _count = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +20,7 @@ class _State extends State<CadastroMedium> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          final result = await Navigator.push(
+           await Navigator.push(
               context,
               MaterialPageRoute(
                   builder: (BuildContext context) => CadastroForm()));
